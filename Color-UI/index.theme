@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Color-UI
+Comment=A colorful theme that will bring some color into your desktop!
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Color-UI
+MetacityTheme=Color-UI
+ButtonLayout=:minimize,maximize,close
+IconTheme=gnome
+CursorTheme=DMZ-Black

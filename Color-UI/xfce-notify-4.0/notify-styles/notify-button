@@ -1,0 +1,58 @@
+style "notify-button" 
+{
+	xthickness = 7
+	ythickness = 7
+	fg[NORMAL] = "#3B3B3B"
+	fg[PRELIGHT] = shade (0.7, "#3B3B3B")
+	fg[ACTIVE] = shade (0.9, "#3B3B3B")
+	fg[INSENSITIVE] = mix (0.5, "#FFFFFF", "#3B3B3B")
+  engine "pixmap"
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      recolorable		= TRUE
+      shadow			= OUT
+      file				= "notify-buttons/button-prelight.png"
+      border			= { 5, 5, 5, 5 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      recolorable		= TRUE
+      shadow			= IN
+      file				= "notify-buttons/button-pressed.png"
+      border			= { 5, 5, 5, 5 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= ACTIVE
+      file				= "notify-buttons/button-pressed.png"
+      border			= { 5, 5, 5, 5 }
+      stretch			= TRUE
+    }	
+    image 
+   {
+     function			= BOX
+     state				= INSENSITIVE
+     file					= "notify-buttons/button-insensitive.png"
+     border			= { 5, 5, 5, 5 }
+     stretch			= TRUE
+    }
+    image 
+    {
+      function			= BOX
+      file				= "notify-buttons/button-normal.png"		
+      border			= { 5, 5, 5, 5 }
+      stretch			= TRUE
+     }	
+  }
+}
+widget_class "XfceNotifyWindow.*<GtkButton>" style "notify-button"
+class "XfceNotifyWindow"	style "notify-button"
+widget_class "*XfceNotifyWindow*"   style "notify-button"
+

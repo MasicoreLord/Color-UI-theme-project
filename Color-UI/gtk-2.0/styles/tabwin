@@ -1,0 +1,19 @@
+style "xfwm-tabwin" {
+	Xfwm4TabwinWidget::border-width = 1
+        Xfwm4TabwinWidget::border-alpha = 1.0
+	Xfwm4TabwinWidget::icon-size = 64
+        Xfwm4TabwinWidget::alpha = 1.0
+        Xfwm4TabwinWidget::border-radius = 0
+
+	bg[NORMAL] = @bg_color
+	bg[SELECTED] = @selected_bg_color
+
+	fg[NORMAL] = @fg_color
+	fg[SELECTED] = @selected_fg_color
+
+	engine "murrine" {
+		contrast = 0.0
+		border_shades = { 0.9, 0.9 }
+	}
+}
+widget "xfwm4-tabwin*" style "xfwm-tabwin"
