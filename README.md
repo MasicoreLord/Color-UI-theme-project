@@ -16,8 +16,8 @@ Color UI was made with maximum usability in mind, from the window borders to the
 
 ## Requirements for this theme:
 * gnome-themes-standard
-* murrine (gtk-engine-murrine)
-* pixbuf (gdk-pixbuf2)
+* murrine
+* pixbuf
 
 ## Install Instructions:
 * Copy the Color-UI folder from this directory to /usr/share/themes!
